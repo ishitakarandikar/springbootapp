@@ -30,7 +30,7 @@ pipeline {
     // some block
    
           
-   sh 'scp  /var/lib/jenkins/workspace/abc/target/MyWebApp-0.0.1-SNAPSHOT.war  ishitakarandikar@ip-192.168.29.1:/opt/tomcat/webapps'
+   sh 'scp  /var/lib/jenkins/workspace/abc/target/MyWebApp-0.0.1-SNAPSHOT.war  ishitakarandikar@192.168.29.1:/opt/tomcat/webapps/'
             
         }
      
