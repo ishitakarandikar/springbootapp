@@ -28,7 +28,7 @@ pipeline {
               
               // sh 'chmod +x /var/lib/jenkins/workspace/abc/target/MyWebApp-0.0.1-SNAPSHOT.war'
             //scp  '/var/lib/jenkins/workspace/abc/target/MyWebApp-0.0.1-SNAPSHOT.war  /opt/tomcat/webapps'
-       sshagent(['deploy_user']) {
+       sshagent(['deploy-ser']) {
     // some block
      //  ssh -o    StrictHostKeyChecking=no ishitakarandikar@192.168.29.1 
    sh 'scp  /var/lib/jenkins/workspace/abc/target/MyWebApp-0.0.1-SNAPSHOT.war  ishitakarandikar@192.168.29.1:/opt/tomcat/webapps'
