@@ -30,7 +30,7 @@ pipeline {
             //scp  '/var/lib/jenkins/workspace/abc/target/MyWebApp-0.0.1-SNAPSHOT.war  /opt/tomcat/webapps'
        sshagent(['deploy_user']) {
     // some block
-       ssh -o    StrictHostKeyChecking=no ishitakarandikar@192.168.29.1 
+     //  ssh -o    StrictHostKeyChecking=no ishitakarandikar@192.168.29.1 
    sh 'scp  /var/lib/jenkins/workspace/abc/target/MyWebApp-0.0.1-SNAPSHOT.war  ishitakarandikar@192.168.29.1:/opt/tomcat/webapps'
             
         }
